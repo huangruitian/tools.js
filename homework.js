@@ -18,3 +18,13 @@
             }
             return lastStr; 
         }
+        //经典的闭包
+        // var liArr = document.getElementsByTagName('li');
+        // var len = liArr.length;
+        // for (var i = 0; i < len; i++) {
+        //     (function (i) {
+        //         liArr[i].addEventListener('click', function (e) {
+        //             console.log(i);
+        //         }, false)
+        //     })(i)
+        // }
