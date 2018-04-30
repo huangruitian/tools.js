@@ -1,4 +1,4 @@
-        //首次出现的字符。 
+        //首次出现的字符。 (数组去重的思想)
         Array.prototype.unique = function () {
             var temp = {},
                 lastStr = "",
