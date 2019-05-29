@@ -365,3 +365,23 @@ String.prototype.trim = function () {
         //     Target.prototype.constuctor = Target;//构造器
         //     Target.prototype.uber = Origin.prototype;//继承自谁
         // }
+//不稳定快排
+function quick(arr){
+  if(arr.length<=1){
+    return arr;
+  }
+  var left = [];
+  var right = [];
+  var base = arr[0];
+  for(var i=1;i<arr.length;i++)
+  {
+   // 判决条件
+    if(arr[i]>base){
+      right.push(arr[i]);
+    }else {
+      left.push(arr[i])
+    }
+  }
+  return quick(left).concat(base,quick(right));
+}
+// console.log(quick([3,2,0,1]));
