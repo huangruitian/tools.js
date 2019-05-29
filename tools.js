@@ -324,3 +324,44 @@ String.prototype.trim = function () {
 // String.prototype.trim = function() {
 //     return this.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
 //   }
+
+        // //封装ajax
+        // function ajaxFun(method, url, data, callBack, flag) {
+        //     var flag = flag == true ? true : false;
+        //     var xhr = null;
+        //     if (window.XMLHttpRequest) {
+        //         xhr = new XMLHttpRequest();
+        //     } else {
+        //         xhr = new ActiveXObject("Microsoft.XMLHttp");
+        //     }
+        //     method = method.toUpperCase();
+        //     if (method == "GET") {
+        //         xhr.open(method,url+'?'+data,flag);
+        //         xhr.send();
+        //     } else if(method == "POST"){
+        //         xhr.open(method,url,flag);
+        //         xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+        //         xhr.send(data);
+        //     }else{
+        //         console.log("not post and get method !");
+        //     }
+        //     xhr.onreadystatechange = function(){
+        //         if(xhr.readyState == 4){
+        //             if(xhr.state == 200){
+        //                 callBack(xhr.responseText);//返回JSON格式的字符串
+        //             }
+        //         }
+        //     }
+        // }
+
+        //传统的原型链
+        //共享原型
+        //借用构造函数
+        //圣杯模式 
+        // function inherit(Origin,Target){
+        //     function F(){}
+        //     F.prototype = Origin.prototype;
+        //     Target.prototype = new F();
+        //     Target.prototype.constuctor = Target;//构造器
+        //     Target.prototype.uber = Origin.prototype;//继承自谁
+        // }
